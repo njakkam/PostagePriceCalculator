@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-26T20:32:11 PDT" name="Test Suite" finished-at="2023-03-26T20:33:38 PDT" duration-ms="87836">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.ChromeRunner@4a003cbe]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SafariRunner@338fc1d8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-03-26T20:32:11 PDT" name="Chrome Test" finished-at="2023-03-26T20:33:18 PDT" duration-ms="67743">
+      <class name="testRunner.ChromeRunner">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:testRunner.ChromeRunner@4a003cbe]" started-at="2023-03-26T20:32:11 PDT" name="defineBrowser" finished-at="2023-03-26T20:32:11 PDT" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defineBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.ChromeRunner@4a003cbe]" started-at="2023-03-26T20:32:11 PDT" name="setUpClass" finished-at="2023-03-26T20:32:11 PDT" duration-ms="659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1e482ecd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.ChromeRunner@4a003cbe]" started-at="2023-03-26T20:32:11 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-26T20:32:36 PDT" duration-ms="25123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Retail Ground Postage Prices for various package sizes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Postage Price Calculator Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.ChromeRunner@4a003cbe]" started-at="2023-03-26T20:32:36 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-26T20:32:58 PDT" duration-ms="21183" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Retail Ground Postage Prices for various package sizes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Postage Price Calculator Tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Retail ground postage price lesser than $80 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Retail ground postage price lesser than $80 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at tests.CalculatorSteps.iVerifyThePriceOfShippingWithMediumBoxesIsLessThan(CalculatorSteps.java:144)
+at ✽.I verify the price of shipping with Medium boxes is less than 80 on the mail services page(file:///Users/nityajakkam/eclipse-workspace/PostagePriceCalculator/src/test/java/features/postagepricecalculation.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.ChromeRunner@4a003cbe]" started-at="2023-03-26T20:32:58 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-26T20:33:18 PDT" duration-ms="20593" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Retail Ground Postage Prices for various package sizes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Postage Price Calculator Tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Retail ground postage price lesser than $80 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Retail ground postage price lesser than $80 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at tests.CalculatorSteps.iVerifyThePriceOfShippingWithLargeBoxesIsLessThan(CalculatorSteps.java:162)
+at ✽.I verify the price of shipping with Large boxes is less than 80 on the mail services page(file:///Users/nityajakkam/eclipse-workspace/PostagePriceCalculator/src/test/java/features/postagepricecalculation.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.ChromeRunner@4a003cbe]" started-at="2023-03-26T20:33:18 PDT" name="tearDownClass" finished-at="2023-03-26T20:33:18 PDT" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.ChromeRunner -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2023-03-26T20:33:18 PDT" name="Safari Test" finished-at="2023-03-26T20:33:38 PDT" duration-ms="20033">
+      <class name="testRunner.SafariRunner">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:testRunner.SafariRunner@338fc1d8]" started-at="2023-03-26T20:33:18 PDT" name="defineBrowser" finished-at="2023-03-26T20:33:18 PDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defineBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.SafariRunner@338fc1d8]" started-at="2023-03-26T20:33:18 PDT" name="setUpClass" finished-at="2023-03-26T20:33:18 PDT" duration-ms="32" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b5f7d2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SafariRunner@338fc1d8]" started-at="2023-03-26T20:33:18 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-26T20:33:26 PDT" duration-ms="7473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Retail Ground Postage Prices for various package sizes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Postage Price Calculator Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SafariRunner@338fc1d8]" started-at="2023-03-26T20:33:26 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-26T20:33:32 PDT" duration-ms="6154" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Retail Ground Postage Prices for various package sizes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Postage Price Calculator Tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Retail ground postage price lesser than $80 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Retail ground postage price lesser than $80 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at tests.CalculatorSteps.iVerifyThePriceOfShippingWithMediumBoxesIsLessThan(CalculatorSteps.java:144)
+at ✽.I verify the price of shipping with Medium boxes is less than 80 on the mail services page(file:///Users/nityajakkam/eclipse-workspace/PostagePriceCalculator/src/test/java/features/postagepricecalculation.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.SafariRunner@338fc1d8]" started-at="2023-03-26T20:33:32 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-26T20:33:38 PDT" duration-ms="6269" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Retail Ground Postage Prices for various package sizes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Postage Price Calculator Tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Retail ground postage price lesser than $80 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Retail ground postage price lesser than $80 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at tests.CalculatorSteps.iVerifyThePriceOfShippingWithLargeBoxesIsLessThan(CalculatorSteps.java:162)
+at ✽.I verify the price of shipping with Large boxes is less than 80 on the mail services page(file:///Users/nityajakkam/eclipse-workspace/PostagePriceCalculator/src/test/java/features/postagepricecalculation.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.SafariRunner@338fc1d8]" started-at="2023-03-26T20:33:38 PDT" name="tearDownClass" finished-at="2023-03-26T20:33:38 PDT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.SafariRunner -->
+    </test> <!-- Safari Test -->
+  </suite> <!-- Test Suite -->
+</testng-results>
